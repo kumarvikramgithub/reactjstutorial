@@ -4,7 +4,7 @@
 The word “props” implies “properties”, and its working functionality is quite similar to
 HTML attributes.
 
-** Props are used to pass data and event handlers to the children components **
+**Props are used to pass data and event handlers to the children components**
 
 Basically, these props components are read-only components. In ReactJS, the data can be
 passed from one component to another component using these props, similar to how the
@@ -13,8 +13,8 @@ props; however, we cannot change or modify props inside the component as they ar
 
 eg: <CreateList title="India" />
 
-    In CreateList component title is passed as a **PROPS** and inside CreateList component we
-    will use pops.title to render value of title props "India" into **DOM**.
+  + In CreateList comp onent title is passed as a **PROPS** and inside CreateList component we
+  will use pops.title to render value of title props "India" into **DOM**.
 
 
 
@@ -29,3 +29,13 @@ component. A component’s state can change over time; whenever it changes, the 
 - The **state** object can store multiple properties
 - **this.setState()** is used to change the value of the state object
 - **setState()** function performs a shallow merge between the new and the previous state
+
+
+# State vs. Props | what is difference between State and Props in React?
+
+|                  | Option | Description |
+| ---------------  | ------ | ----------- |
+| Use Case         | State is used to store the data of the components that have to be rendered to the view | Props are used to pass data and event handlers to the children components |
+| Mutability       | State holds the data and can change over time | Props are immutable—once set, props cannot be changed |
+| Component        | State can only be used in class components | Props can be used in both functional and class components |
+| Updation         | Event handlers generally update state | The parent component sets props for the children components |
