@@ -203,20 +203,3 @@ You can also define your own **custom Hooks** as JavaScript functions.
 
 
 
-# what is useState?
-
-**useState** is a React Hook that lets you add a state variable to your component.
-
-    Eg: const [state, setState] = useState(initialState);
-
-The convention is to name state variables like **[something, setSomething]** using **array destructuring.**
-
-   ## Parameters
-   + **initialState:** The value you want the state to be initially. It can be a value of any type, but there is a special behavior for functions. This argument is ignored after the initial render.
-    + If you pass a function as initialState, it will be treated as an initializer function. It should be pure, should take no arguments, and should return a value of any type. React will call your initializer function when initializing the component, and store its return value as the initial state. See an example below.
-
-   ## Returns
-   + useState returns an array with exactly two values:
-
-        The current state. During the first render, it will match the initialState you have passed.
-        The set function that lets you update the state to a different value and trigger a re-render.
